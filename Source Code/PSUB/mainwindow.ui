@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1036</width>
+    <height>725</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FeFlow - Coupled Hydromechanical Plugin - PreProcessing Tool - pham@geo.tu-darmstadt.de</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>230</y>
+      <width>160</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="mainLayout"/>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1036</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuOpen_Data_File">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Open Data File</string>
+    </property>
+    <addaction name="actionMesh_File"/>
+    <addaction name="actionResults_File"/>
+   </widget>
+   <widget class="QMenu" name="menuView_Control">
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>View Control</string>
+    </property>
+    <addaction name="actionScale_Setting"/>
+    <addaction name="actionContour_Color_Setting"/>
+    <addaction name="actionSlice_Setting"/>
+    <addaction name="separator"/>
+    <addaction name="actionPick_Time_Step_Results"/>
+   </widget>
+   <addaction name="menuOpen_Data_File"/>
+   <addaction name="menuView_Control"/>
+  </widget>
+  <action name="actionMesh_File">
+   <property name="text">
+    <string>Mesh File</string>
+   </property>
+  </action>
+  <action name="actionResults_File">
+   <property name="text">
+    <string>Results File</string>
+   </property>
+  </action>
+  <action name="actionScale_Setting">
+   <property name="text">
+    <string>Scale Setting</string>
+   </property>
+  </action>
+  <action name="actionContour_Color_Setting">
+   <property name="text">
+    <string>Contour Color Setting</string>
+   </property>
+  </action>
+  <action name="actionPick_Time_Step_Results">
+   <property name="text">
+    <string>Pick Time Step Results</string>
+   </property>
+  </action>
+  <action name="actionSlice_Setting">
+   <property name="text">
+    <string>Cutting Plane Setting</string>
+   </property>
+  </action>
+  <action name="action1_Create_materials">
+   <property name="text">
+    <string>1. Create materials</string>
+   </property>
+  </action>
+  <action name="action2_Create_boundary_conditions">
+   <property name="text">
+    <string>2. Create boundary conditions</string>
+   </property>
+  </action>
+  <action name="action3_Apply_material_to_layers">
+   <property name="text">
+    <string>3. Apply material to layers</string>
+   </property>
+  </action>
+  <action name="action4_Save_to_sub_file">
+   <property name="text">
+    <string>4. Save to .sub file</string>
+   </property>
+  </action>
+  <action name="action5_Read_sub_file">
+   <property name="text">
+    <string>5. Read .sub file</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

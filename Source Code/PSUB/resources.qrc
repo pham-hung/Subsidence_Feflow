@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>shaders/axis.frag</file>
+        <file>shaders/axis.vert</file>
+        <file>shaders/element.frag</file>
+        <file>shaders/element.vert</file>
+        <file>shaders/line.frag</file>
+        <file>shaders/line.vert</file>
+        <file>shaders/node.frag</file>
+        <file>shaders/node.vert</file>
+        <file>shaders/lineDeform.vert</file>
+        <file>shaders/lineDeform.frag</file>
+    </qresource>
+</RCC>
