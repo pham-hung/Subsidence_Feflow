@@ -3386,12 +3386,12 @@ CLIENT
         <parameter key="107" name="IOFLOW" units="[10-4 m/d]" />
       </userUnits>
       <budgets>
-        <budget key="Current Element Selection&#x1F;Singleton&#x1D;10003" active="false" format="g" digits="5" />
         <budget key="Domain&#x1D;10003" active="false" format="g" digits="5" />
-        <budget key="Domain&#x1D;10006" active="false" format="g" digits="5" export="false" startTime="0" />
         <budget key="Current Node Selection&#x1F;Singleton&#x1D;10006" active="false" format="g" digits="5" export="false" startTime="0" />
         <budget key="Current Element Selection&#x1F;Singleton&#x1D;10006" active="false" format="g" digits="5" export="false" startTime="0" />
+        <budget key="Domain&#x1D;10006" active="false" format="g" digits="5" export="false" startTime="0" />
         <budget key="Current Node Selection&#x1F;Singleton&#x1D;10003" active="false" format="g" digits="5" />
+        <budget key="Current Element Selection&#x1F;Singleton&#x1D;10003" active="false" format="g" digits="5" />
       </budgets>
       <subdomainTransferBudgets />
       <fluxIntegrators>
@@ -3446,54 +3446,42 @@ CLIENT
             <header>00000000</header>
             <footer>00000000</footer>
           </text>
-          <plots>
-            <expanderItem path="Geometry" state="1" checkState="2" header="270" />
-            <expanderItem path="Maps" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Inner Border" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Line Elements" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Mesh Origin" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Node Numbers" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Outer Border" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Point Elements" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Polygon Area" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Polygon Outline" state="1" checkState="2" header="270" />
-            <expanderItem path="Maps&#x1D;AutoCAD DXF Files" state="1" checkState="2" header="270" />
-            <expanderItem path="Maps&#x1D;Supermesh" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Inner Border&#x1D;Supermesh borders" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Line Elements&#x1D;Supermesh" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Mesh Origin&#x1D;Origin" state="1" checkState="1" header="270" />
-            <expanderItem path="Geometry&#x1D;Node Numbers&#x1D;Supermesh" state="1" checkState="1" header="270" />
-            <expanderItem path="Geometry&#x1D;Outer Border&#x1D;Supermesh borders" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Point Elements&#x1D;Supermesh" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Polygon Area&#x1D;Supermesh" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Polygon Outline&#x1D;Supermesh" state="1" checkState="2" header="270" />
-            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file" state="1" checkState="2" header="270" />
-            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines" state="0" checkState="2" header="270" />
-            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file&#x1D;Default" state="1" checkState="0" header="270" />
-            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines&#x1D;Default" state="1" checkState="0" header="270" />
-            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file&#x1D;Default&#x1D;Supermesh Domain" state="1" checkState="1" header="270" />
-            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines&#x1D;Default&#x1D;Supermesh Domain" state="1" checkState="1" header="270" />
+          <plots verticalPos="0">
+            <expanderItem path="Geometry" state="1" checkState="2" header="80" />
+            <expanderItem path="Maps" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Inner Border" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Line Elements" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Mesh Origin" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Node Numbers" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Outer Border" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Point Elements" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Polygon Area" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Polygon Outline" state="1" checkState="2" header="80" />
+            <expanderItem path="Maps&#x1D;AutoCAD DXF Files" state="1" checkState="2" header="80" />
+            <expanderItem path="Maps&#x1D;Supermesh" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Inner Border&#x1D;Supermesh borders" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Line Elements&#x1D;Supermesh" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Mesh Origin&#x1D;Origin" state="1" checkState="1" header="80" />
+            <expanderItem path="Geometry&#x1D;Node Numbers&#x1D;Supermesh" state="1" checkState="1" header="80" />
+            <expanderItem path="Geometry&#x1D;Outer Border&#x1D;Supermesh borders" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Point Elements&#x1D;Supermesh" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Polygon Area&#x1D;Supermesh" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Polygon Outline&#x1D;Supermesh" state="1" checkState="2" header="80" />
+            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file" state="1" checkState="2" header="80" />
+            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines" state="0" checkState="2" header="80" />
+            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file&#x1D;Default" state="1" checkState="0" header="80" />
+            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines&#x1D;Default" state="1" checkState="0" header="80" />
+            <expanderItem path="Maps&#x1D;AutoCAD DXF Files&#x1D;Cad file&#x1D;Default&#x1D;Supermesh Domain" state="1" checkState="1" header="80" />
+            <expanderItem path="Maps&#x1D;Supermesh&#x1D;Lines&#x1D;Default&#x1D;Supermesh Domain" state="1" checkState="1" header="80" />
           </plots>
           <sources>
             <source key="Geometry">
               <styles>
-                <style key="Mesh Origin" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Node Numbers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
-                    <componentView spaceDomainKey="Origin" show="false" />
+                    <componentView spaceDomainKey="Supermesh" show="false" />
                   </componentViews>
-                  <color R="0" G="0" B="0" A="0.5" />
-                </style>
-                <style key="Line Elements" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews>
-                    <componentView spaceDomainKey="Supermesh" show="true" />
-                  </componentViews>
-                  <color R="0" G="0" B="0.5" A="1" />
-                </style>
-                <style key="Polygon Outline" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews>
-                    <componentView spaceDomainKey="Supermesh" show="true" />
-                  </componentViews>
-                  <color R="0" G="0.2" B="0.2" A="1" />
+                  <color R="0" G="0" B="0" A="1" />
                 </style>
                 <style key="Point Elements" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
@@ -3507,23 +3495,35 @@ CLIENT
                   </componentViews>
                   <color R="0" G="0" B="0" A="1" />
                 </style>
-                <style key="Node Numbers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Polygon Outline" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
-                    <componentView spaceDomainKey="Supermesh" show="false" />
+                    <componentView spaceDomainKey="Supermesh" show="true" />
                   </componentViews>
-                  <color R="0" G="0" B="0" A="1" />
+                  <color R="0" G="0.2" B="0.2" A="1" />
                 </style>
-                <style key="Inner Border" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Mesh Origin" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
-                    <componentView spaceDomainKey="Supermesh borders" show="true" />
+                    <componentView spaceDomainKey="Origin" show="false" />
                   </componentViews>
-                  <color R="0.4" G="0" B="0" A="1" />
+                  <color R="0" G="0" B="0" A="0.5" />
                 </style>
                 <style key="Polygon Area" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
                     <componentView spaceDomainKey="Supermesh" show="true" />
                   </componentViews>
                   <color R="0.9" G="0.9" B="0.9" A="0.5" />
+                </style>
+                <style key="Line Elements" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh" show="true" />
+                  </componentViews>
+                  <color R="0" G="0" B="0.5" A="1" />
+                </style>
+                <style key="Inner Border" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Supermesh borders" show="true" />
+                  </componentViews>
+                  <color R="0.4" G="0" B="0" A="1" />
                 </style>
               </styles>
             </source>
@@ -3609,38 +3609,48 @@ CLIENT
             <header>00000000</header>
             <footer>00000000</footer>
           </text>
-          <plots>
-            <expanderItem path="Geometry" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Location Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Location-Connecting Line (labeled)" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Mesh Origin" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Flags" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Labels" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Vol. Labels" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Vol. Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;BC Nodes" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;Curve Label" state="1" checkState="0" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;Transient" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;Value Label" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Mesh Origin&#x1D;Origin" state="1" checkState="1" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;BC Nodes&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;Transient&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic-head BC&#x1D;Value Label&#x1D;Domain / Dynamic Slice" state="1" checkState="1" header="270" />
+          <plots verticalPos="0">
+            <expanderItem path="Geometry" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Location Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Location-Connecting Line (labeled)" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Mesh Origin" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Flags" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Labels" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Vol. Labels" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Vol. Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;BC Nodes" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;Curve Label" state="1" checkState="0" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;Transient" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;Value Label" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Mesh Origin&#x1D;Origin" state="1" checkState="1" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;BC Nodes&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;Transient&#x1D;Domain / Dynamic Slice" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic-head BC&#x1D;Value Label&#x1D;Domain / Dynamic Slice" state="1" checkState="1" header="80" />
           </plots>
           <sources>
             <source key="Geometry">
               <styles>
-                <style key="Faces" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews>
-                    <componentView spaceDomainKey="Domain&#x1E;Dynamic Slice" show="true" />
-                  </componentViews>
-                  <color R="0.5" G="0.5" B="0.5" A="1" />
+                <style key="Current vertical face selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.8" B="0.2" A="0.7" />
+                </style>
+                <style key="Observation-Point Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Location Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Volume Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="1">
+                  <componentViews />
+                  <color R="0" G="1" B="0" A="0.75" />
                 </style>
                 <style key="Candidate node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
@@ -3654,9 +3664,27 @@ CLIENT
                   <componentViews />
                   <color R="0" G="0" B="0" A="1" />
                 </style>
-                <style key="Volume Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="1">
+                <style key="Current vertical edge selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="0" G="1" B="0" A="0.75" />
+                  <color R="1" G="0.8" B="0.2" A="1" />
+                </style>
+                <style key="Faces" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Domain&#x1E;Dynamic Slice" show="true" />
+                  </componentViews>
+                  <color R="0.5" G="0.5" B="0.5" A="1" />
+                </style>
+                <style key="Current element selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.8" B="0.2" A="0.5" />
+                </style>
+                <style key="Location-Connecting Line" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Current edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.8" B="0.2" A="0.7" />
                 </style>
                 <style key="Mesh Origin" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
@@ -3664,75 +3692,47 @@ CLIENT
                   </componentViews>
                   <color R="0" G="0" B="0" A="0.5" />
                 </style>
+                <style key="Candidate vertical edge selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.9" B="0.7" A="1" />
+                </style>
                 <style key="Edges" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
                     <componentView spaceDomainKey="Domain&#x1E;Dynamic Slice" show="true" />
                   </componentViews>
                   <color R="0" G="0" B="0" A="0.5" />
                 </style>
-                <style key="Current element selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="0.5" />
-                </style>
-                <style key="Current edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="0.7" />
-                </style>
-                <style key="Current vertical edge selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="1" />
-                </style>
-                <style key="Observation-Point Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
                 <style key="Candidate element selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="1" G="0.7" B="0.4" A="0.5" />
-                </style>
-                <style key="Candidate edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.7" B="0.4" A="0.7" />
-                </style>
-                <style key="Location-Connecting Line" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
                 </style>
                 <style key="Vertical edge inspection (fancy)" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="0" G="0" B="0" A="1" />
                 </style>
-                <style key="Candidate vertical edge selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Candidate edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="1" G="0.9" B="0.7" A="1" />
+                  <color R="1" G="0.7" B="0.4" A="0.7" />
                 </style>
                 <style key="Observation-Point Flags" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="0.3" G="1" B="0.3" A="1" />
                 </style>
-                <style key="Current node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Volume Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="1" />
+                  <color R="0" G="1" B="0" A="0.75" />
+                </style>
+                <style key="Observation-Point Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
                 </style>
                 <style key="Node inspection (fancy)" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="0" G="0" B="0" A="1" />
                 </style>
-                <style key="Current vertical face selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Current node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="0.7" />
-                </style>
-                <style key="Volume Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0" G="1" B="0" A="0.75" />
-                </style>
-                <style key="Location Markers" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
-                <style key="Observation-Point Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
+                  <color R="1" G="0.8" B="0.2" A="1" />
                 </style>
               </styles>
             </source>
@@ -3743,14 +3743,14 @@ CLIENT
                   <color R="1" G="1" B="1" A="1" />
                   <textColor R="0.603922" G="0.603922" B="1" A="1" />
                 </style>
-                <style key="BC Nodes" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Transient" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
                   <componentViews>
                     <componentView spaceDomainKey="Domain&#x1E;Dynamic Slice" show="true" />
                   </componentViews>
                   <color R="1" G="1" B="1" A="1" />
                   <textColor R="0.603922" G="0.603922" B="1" A="1" />
                 </style>
-                <style key="Transient" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
+                <style key="BC Nodes" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews>
                     <componentView spaceDomainKey="Domain&#x1E;Dynamic Slice" show="true" />
                   </componentViews>
@@ -3844,82 +3844,46 @@ CLIENT
             <header>00000000</header>
             <footer>00000000</footer>
           </text>
-          <plots>
-            <expanderItem path="Geometry" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Location Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Location-Connecting Line" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Flags" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Labels" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Obs. Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Vol. Labels" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Vol. Markers" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Confidence Intervals" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Continuous" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Error Bars" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Error Labels" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Fringes" state="1" checkState="0" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Isolines" state="1" checkState="0" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Isosurfaces" state="1" checkState="0" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Slice 1" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Slice 11" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Slice 1" state="1" checkState="2" header="270" />
-            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Slice 11" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Continuous&#x1D;Domain" state="1" checkState="2" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Fringes&#x1D;Domain" state="1" checkState="0" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Isolines&#x1D;Domain" state="1" checkState="0" header="270" />
-            <expanderItem path="Hydraulic head&#x1D;Isosurfaces&#x1D;Domain" state="1" checkState="0" header="270" />
+          <plots verticalPos="0">
+            <expanderItem path="Geometry" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Location Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Location-Connecting Line" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Flags" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Labels" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Obs. Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Vol. Labels" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Vol. Markers" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Confidence Intervals" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Continuous" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Error Bars" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Error Labels" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Fringes" state="1" checkState="0" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Isolines" state="1" checkState="0" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Isosurfaces" state="1" checkState="0" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Slice 1" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Edges&#x1D;Domain / Slice 11" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Slice 1" state="1" checkState="2" header="80" />
+            <expanderItem path="Geometry&#x1D;Faces&#x1D;Domain / Slice 11" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Continuous&#x1D;Domain" state="1" checkState="2" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Fringes&#x1D;Domain" state="1" checkState="0" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Isolines&#x1D;Domain" state="1" checkState="0" header="80" />
+            <expanderItem path="Hydraulic head&#x1D;Isosurfaces&#x1D;Domain" state="1" checkState="0" header="80" />
           </plots>
           <sources>
             <source key="Geometry">
               <styles>
-                <style key="Edges" lightingDesired="true" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews>
-                    <componentView spaceDomainKey="Domain&#x1E;Slice 1" show="true" subjectToClipping="false" />
-                    <componentView spaceDomainKey="Domain&#x1E;Slice 11" show="true" subjectToClipping="false" />
-                    <componentView spaceDomainKey="Domain" show="true" subjectToClipping="true" />
-                  </componentViews>
-                  <color R="1" G="1" B="1" A="0.5" />
-                </style>
-                <style key="Volume Markers" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Current node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="0" G="1" B="0" A="0.75" />
+                  <color R="1" G="0.8" B="0.2" A="1" />
                 </style>
-                <style key="Location Markers" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Current edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
-                <style key="Current element selection" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="0.5" />
-                </style>
-                <style key="Observation-Point Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
-                <style key="Location-Connecting Line" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
-                <style key="Volume Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="1">
-                  <componentViews />
-                  <color R="0" G="1" B="0" A="0.75" />
-                </style>
-                <style key="Candidate element selection" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.7" B="0.4" A="0.5" />
-                </style>
-                <style key="Topology indices" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="1" B="1" A="1" />
-                </style>
-                <style key="Element inspection" lightingDesired="true" ambientLightFraction="1" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="1" B="1" A="1" />
+                  <color R="1" G="0.8" B="0.2" A="0.7" />
                 </style>
                 <style key="Observation-Point Markers" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
@@ -3929,46 +3893,78 @@ CLIENT
                   <componentViews />
                   <color R="1" G="1" B="1" A="1" />
                 </style>
-                <style key="Current node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Node inspection (fancy)" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="1" />
-                </style>
-                <style key="Current edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="1" G="0.8" B="0.2" A="0.7" />
-                </style>
-                <style key="Observation-Point Flags" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
+                  <color R="0" G="0" B="0" A="1" />
                 </style>
                 <style key="Candidate node selection" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="1" G="0.9" B="0.7" A="1" />
                 </style>
-                <style key="Faces" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
-                  <componentViews>
-                    <componentView spaceDomainKey="Domain&#x1E;Slice 1" show="true" subjectToClipping="false" />
-                    <componentView spaceDomainKey="Domain&#x1E;Slice 11" show="true" subjectToClipping="false" />
-                    <componentView spaceDomainKey="Domain" show="true" subjectToClipping="true" />
-                  </componentViews>
-                  <color R="0.5" G="0.5" B="0.5" A="1" />
+                <style key="Location Markers" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
                 </style>
                 <style key="Candidate edge selection" lightingDesired="false" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="1" G="0.7" B="0.4" A="0.7" />
                 </style>
-                <style key="Node inspection (fancy)" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Observation-Point Flags" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
-                  <color R="0" G="0" B="0" A="1" />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Faces" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Domain&#x1E;Slice 1" show="true" subjectToClipping="false" />
+                    <componentView spaceDomainKey="Domain" show="true" subjectToClipping="true" />
+                    <componentView spaceDomainKey="Domain&#x1E;Slice 11" show="true" subjectToClipping="false" />
+                  </componentViews>
+                  <color R="0.5" G="0.5" B="0.5" A="1" />
+                </style>
+                <style key="Volume Markers" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0" G="1" B="0" A="0.75" />
+                </style>
+                <style key="Current element selection" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.8" B="0.2" A="0.5" />
+                </style>
+                <style key="Observation-Point Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="8">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Edges" lightingDesired="true" ambientLightFraction="0.5" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews>
+                    <componentView spaceDomainKey="Domain&#x1E;Slice 1" show="true" subjectToClipping="false" />
+                    <componentView spaceDomainKey="Domain&#x1E;Slice 11" show="true" subjectToClipping="false" />
+                    <componentView spaceDomainKey="Domain" show="true" subjectToClipping="true" />
+                  </componentViews>
+                  <color R="1" G="1" B="1" A="0.5" />
+                </style>
+                <style key="Candidate element selection" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="0.7" B="0.4" A="0.5" />
+                </style>
+                <style key="Volume Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="1">
+                  <componentViews />
+                  <color R="0" G="1" B="0" A="0.75" />
+                </style>
+                <style key="Element inspection" lightingDesired="true" ambientLightFraction="1" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="1" B="1" A="1" />
+                </style>
+                <style key="Location-Connecting Line" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
+                <style key="Topology indices" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="1" G="1" B="1" A="1" />
                 </style>
               </styles>
             </source>
             <source key="Data&#x1D;400" state="1" format="g" digits="6">
               <styles>
-                <style key="Observation-Point Error Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="10">
-                  <componentViews />
-                  <color R="0.3" G="1" B="0.3" A="1" />
-                </style>
                 <style key="Observation-Point Confidence Intervals" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
                   <componentViews />
                   <color R="0.3" G="1" B="0.3" A="1" />
@@ -4007,13 +4003,17 @@ CLIENT
                     <array rows="0" columns="1" type="double" />
                   </arbitrary>
                 </style>
+                <style key="Observation-Point Error Bars" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                  <componentViews />
+                  <color R="0.3" G="1" B="0.3" A="1" />
+                </style>
                 <style key="Continuous" lightingDesired="true" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0" legendItemNumber="11" legendUpward="true" showLegend="true">
                   <componentViews>
                     <componentView spaceDomainKey="Domain" show="true" subjectToClipping="true" />
                   </componentViews>
                   <color R="1" G="1" B="1" A="0.5" />
                 </style>
-                <style key="Observation-Point Error Bars" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="0">
+                <style key="Observation-Point Error Labels" lightingDesired="false" ambientLightFraction="0.25" brightness="1" relSize1="1" labelPosition="10">
                   <componentViews />
                   <color R="0.3" G="1" B="0.3" A="1" />
                 </style>
@@ -4066,7 +4066,7 @@ CLIENT
               </timeline>
             </timelines>
           </autopilot>
-          <enclosingFrame x="784" y="26" width="508" height="526" view_screen="-1" view_state="128" />
+          <enclosingFrame x="733" y="26" width="508" height="526" view_screen="-1" view_state="0" />
           <clippingPlanes>
             <clippingPlane posX="0" posY="0" posZ="0" normalX="1" normalY="0" normalZ="0" status="disabled" />
             <clippingPlane posX="0" posY="0" posZ="0" normalX="0" normalY="1" normalZ="0" status="disabled" />
@@ -4157,10 +4157,10 @@ CLIENT
       </properties>
     </meshgen>
   </client>
-MODULE SUB 1.0 SIMULATION
+MODULE SUB+ 1.0 SIMULATION
  
 @
-MOD_INFO SUB 1.0 SIMULATION
+MOD_INFO SUB+ 1.0 SIMULATION
    Enabled=true
 @
 END
