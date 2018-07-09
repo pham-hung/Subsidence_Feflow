@@ -1,0 +1,4 @@
+EXPORTS
+	RegisterModule PRIVATE
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
