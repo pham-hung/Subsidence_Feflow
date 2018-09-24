@@ -27,6 +27,5 @@ for i=1:100
     end
     result(i,1)=pet/gf+H0s;
 end
-filename='C:/ketqua1D.xls';
-xlswrite(filename,result);
+xlswrite('Terzaghi.xls',result);
 
