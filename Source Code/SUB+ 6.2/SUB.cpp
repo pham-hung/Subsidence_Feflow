@@ -950,7 +950,8 @@ void CSub::drainedAnalysis()
         QQ.setZero();
         F.setZero();
 
-        timeIncrement=initialTimeIncrement;
+        //Convert from days to seconds
+        timeIncrement=initialTimeIncrement*86400.0f;
         for (int i=0;i<wellRate.rows();i++)
         {
             QQ(wellRate(i,0)-1,0)=-wellRate(i,1)*timeIncrement;
@@ -1397,14 +1398,15 @@ void CSub::createWorkingFolder()
 
 void CSub::getMaterialFlowProperties()
 {
+    //Unit is m/d, convert to m/s
     numberOfElement=IfmGetNumberOfElements(m_pDoc);
     hydroParameters=MatrixXd::Zero(numberOfElement,5);
 
     for (int j=0;j<numberOfElement;j++)
     {
-        hydroParameters(j,0)=IfmGetMatXConductivityValue3D(m_pDoc,j);
-        hydroParameters(j,1)=IfmGetMatYConductivityValue3D(m_pDoc,j);
-        hydroParameters(j,2)=IfmGetMatZConductivityValue3D(m_pDoc,j);
+        hydroParameters(j,0)=IfmGetMatXConductivityValue3D(m_pDoc,j)/86400.0f;
+        hydroParameters(j,1)=IfmGetMatYConductivityValue3D(m_pDoc,j)/86400.0f;
+        hydroParameters(j,2)=IfmGetMatZConductivityValue3D(m_pDoc,j)/86400.0f;
         hydroParameters(j,3)=IfmGetMatFlowCompressibility(m_pDoc,j);
         hydroParameters(j,4)=IfmGetMatFlowSinkSource(m_pDoc,j);
     }
@@ -1444,7 +1446,7 @@ void CSub::getBoundaryCondition()
         }
         if(typeBC==4)
         {
-            vector_wellRate.push_back(make_pair(j+1,valueBC));
+            vector_wellRate.push_back(make_pair(j+1,valueBC/86400.0f)); //convert from m3/d to m3/s
         }
     }
     convertPairVectorToMatrix(vector_fixH,fixh);
@@ -1473,7 +1475,8 @@ void CSub::skipTimeStep()
 
 void CSub::getTimeInformation()
 {
-    initialTimeIncrement=IfmGetCurrentTimeIncrement(m_pDoc);;
+    //Time is day, convert to seconds
+    initialTimeIncrement=IfmGetCurrentTimeIncrement(m_pDoc);
     finalSimulationTime=IfmGetFinalSimulationTime(m_pDoc);
     numberOfStep=finalSimulationTime/initialTimeIncrement;
 }
